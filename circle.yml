@@ -1,0 +1,29 @@
+machine:
+  timezone:
+    Australia/Perth
+
+  php:
+    version: 5.4.4
+
+dependencies:
+  pre:
+    # No password is required for the MySQL user `ubuntu`
+    - mysql -u ubuntu -e "create database magento"
+
+    # Download MageRun
+    - wget http://files.magerun.net/n98-magerun-latest.phar -O n98-magerun.phar
+
+    # Make sure MageRun is executable
+    - chmod +x ./n98-magerun.phar
+
+    # Download Magento into `magento` directory - should be the latest version.
+    - git clone git@github.com:OpenMage/magento-mirror.git magento
+
+    # Generate local.xml file
+    - ./n98-magerun.phar --root-dir=magento local-config:generate 127.0.0.1 ubuntu '' magento db bdc
+
+    # Install Magento
+    - ./n98-magerun.phar --root-dir=magento sys:setup:run
+
+    # Clear Cache
+    - ./n98-magerun.phar --root-dir=magento cache:clean
