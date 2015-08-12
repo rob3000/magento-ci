@@ -1,0 +1,12 @@
+# Allows you to override the default install setup.
+# @see https://github.com/netz98/n98-magerun/wiki/Magento-installer
+commands:
+  N98\Magento\Command\Installer\InstallCommand:
+    installation:
+      defaults:
+        currency: AUD
+        admin_username: myadmin
+        admin_firstname: Firstname
+        admin_lastname: Lastname
+        admin_password: mydefaultSecret
+        admin_email: defaultemail@example.com
