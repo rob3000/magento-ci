@@ -16,3 +16,5 @@ dependencies:
     # Use magerun to install magento.
     - ./n98-magerun.phar install --dbHost="127.0.0.1" --dbUser="ubuntu" --dbPass="" --dbName="circle_test" --installSampleData=yes --useDefaultConfigParams=yes --magentoVersionByName="magento-ce-1.7.0.2" --installationFolder="magento" --baseUrl="http://magento.localdomain/"
 
+    # Install Behat
+    - composer install

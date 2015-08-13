@@ -1,0 +1,21 @@
+{
+    "require-dev": {
+        "magetest/magento-behat-extension": "dev-develop",
+        "magetest/magento-phpspec-extension": "~2.0",
+        "bossa/phpspec2-expect": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": [
+                "magento/public/app",
+                "magento/public/app/code/local",
+                "magento/public/app/code/community",
+                "magento/public/app/code/core",
+                "magento/public/lib"
+            ]
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
