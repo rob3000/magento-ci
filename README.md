@@ -3,4 +3,4 @@
 
 ## The Goal
 
-To create a system that will install versions of magento and core tests and/or custom tests to make sure code works across all versions
+To have a CI server that checks for magento coding standards and runs all tests.

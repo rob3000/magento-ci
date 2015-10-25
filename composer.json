@@ -1,21 +1,20 @@
 {
+    "name": "rob3000/magento-ci",
     "require-dev": {
-        "magetest/magento-behat-extension": "dev-develop",
-        "magetest/magento-phpspec-extension": "~2.0",
+        "phpspec/phpspec": "~2.1",
+        "phpunit/phpunit": "~4.6",
+        "mockery/mockery": "0.9.*",
+        "behat/behat": "~3.0",
         "bossa/phpspec2-expect": "dev-master"
     },
-    "autoload": {
-        "psr-0": {
-            "": [
-                "magento/public/app",
-                "magento/public/app/code/local",
-                "magento/public/app/code/community",
-                "magento/public/app/code/core",
-                "magento/public/lib"
-            ]
-        }
-    },
+    "type": "library",
     "config": {
-        "bin-dir": "bin"
-    }
+       "bin-dir": "bin"
+     },
+    "authors": [
+        {
+            "name": "Robert Shepherd",
+            "email": "hello@rob3000.com"
+        }
+    ]
 }
