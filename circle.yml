@@ -6,7 +6,7 @@ machine:
     version: 5.4.4
 
 dependencies:
-  pre:
+  post:
     # Update our dependencies
     - composer install
 
@@ -19,4 +19,4 @@ test:
     - php bin/phpspec run
 
     # Run Unit Tests
-    - php bin/phpunit
+    #- php bin/phpunit
