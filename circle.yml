@@ -9,6 +9,7 @@ dependencies:
   post:
     # Update our dependencies
     - composer install
+    - phpcs --config-set installed_paths ./vendor/magento-ecg/coding-standard
 
 test:
   override:
@@ -16,7 +17,7 @@ test:
     - bin/behat
 
     # Run PHPCS
-    - php bin/phpcs --standard=Ecg
+    - php bin/phpcs --standard=Ecg .
 
     # Run Unit Tests
     #- php bin/phpunit
