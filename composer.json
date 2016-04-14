@@ -5,7 +5,9 @@
         "phpunit/phpunit": "~4.6",
         "mockery/mockery": "0.9.*",
         "behat/behat": "~3.0",
-        "bossa/phpspec2-expect": "dev-master"
+        "bossa/phpspec2-expect": "dev-master",
+        "squizlabs/php_codesniffer": "*",
+        "magento-ecg/coding-standard": "^2.0"
     },
     "type": "library",
     "config": {
@@ -16,9 +18,5 @@
             "name": "Robert Shepherd",
             "email": "hello@rob3000.com"
         }
-    ],
-    "require": {
-        "squizlabs/php_codesniffer": "*",
-        "magento-ecg/coding-standard": "^2.0"
-    }
+    ]
 }
