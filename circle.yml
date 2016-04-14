@@ -3,7 +3,7 @@ machine:
     Australia/Perth
 
   php:
-    version: 5.4.4
+    version: 5.4.5
 
 dependencies:
   post:
@@ -16,7 +16,7 @@ test:
     - bin/behat
 
     # Run PHPCS
-    - php bin/phpspec run
+    - php bin/phpcs --standard=Ecg
 
     # Run Unit Tests
     #- php bin/phpunit

@@ -16,5 +16,9 @@
             "name": "Robert Shepherd",
             "email": "hello@rob3000.com"
         }
-    ]
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*",
+        "magento-ecg/coding-standard": "^2.0"
+    }
 }
