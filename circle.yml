@@ -17,7 +17,7 @@ test:
     - bin/behat
 
     # Run PHPCS
-    - php bin/phpcs --standard=Ecg .
+    - php bin/phpcs --standard=./vendor/magento-ecg/coding-standard/Ecg .
 
     # Run Unit Tests
     #- php bin/phpunit
